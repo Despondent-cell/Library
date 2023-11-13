@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d48b27ac-a8fe-4faf-a48b-eb205fb912e1" name="Changes" comment="131123.6">
-      <change afterPath="$PROJECT_DIR$/src/pl/javastart/library/app/LibraryApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/javastart/library/app/LibraryControl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/javastart/library/model/Library.java" afterDir="false" />
+    <list default="true" id="d48b27ac-a8fe-4faf-a48b-eb205fb912e1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/pl/javastart/library/model/Magazine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pl/javastart/library/model/Publication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/javastart/library/app/Library.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/javastart/library/app/LibraryApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/javastart/library/app/LibraryApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/javastart/library/app/LibraryControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/javastart/library/app/LibraryControl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/javastart/library/io/DataReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/javastart/library/io/DataReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/javastart/library/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/javastart/library/model/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/javastart/library/model/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/javastart/library/model/Library.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +38,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2Y7U6eA1bZBsIZk7zeYzBFjaJEO" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
@@ -46,7 +50,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.pl.javastart.library.app.Library">
+  <component name="RunManager" selected="Application.LibraryApp">
     <configuration name="Library" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="app.Library" />
       <module name="Library" />
@@ -54,7 +58,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="pl.javastart.library.app.Library" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="LibraryApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pl.javastart.library.app.LibraryApp" />
+      <module name="Library" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.javastart.library.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="pl.javastart.library.app.Library" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pl.javastart.library.app.Library" />
       <module name="Library" />
       <extension name="coverage">
@@ -69,7 +86,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.pl.javastart.library.app.Library" />
+        <item itemvalue="Application.LibraryApp" />
         <item itemvalue="Application.Library" />
       </list>
     </recent_temporary>
@@ -160,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699886110533</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="131123.7">
+      <created>1699888908949</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1699888908949</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -182,6 +206,7 @@
     <MESSAGE value="131123.4" />
     <MESSAGE value="131123.5" />
     <MESSAGE value="131123.6" />
-    <option name="LAST_COMMIT_MESSAGE" value="131123.6" />
+    <MESSAGE value="131123.7" />
+    <option name="LAST_COMMIT_MESSAGE" value="131123.7" />
   </component>
 </project>
