@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d48b27ac-a8fe-4faf-a48b-eb205fb912e1" name="Changes" comment="131123.2">
-      <change beforePath="$PROJECT_DIR$/src/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Book.java" afterDir="false" />
+    <list default="true" id="d48b27ac-a8fe-4faf-a48b-eb205fb912e1" name="Changes" comment="131123.3">
+      <change beforePath="$PROJECT_DIR$/src/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/javastart/library/model/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/javastart/library/app/Library.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +34,6 @@
   <component name="ProjectId" id="2Y7U6eA1bZBsIZk7zeYzBFjaJEO" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
@@ -42,16 +42,30 @@
     "RunOnceActivity.ShowReadmeOnStart": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.pl.javastart.library.app.Library">
     <configuration name="Library" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Library" />
+      <option name="MAIN_CLASS_NAME" value="app.Library" />
       <module name="Library" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="pl.javastart.library.app.Library" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pl.javastart.library.app.Library" />
+      <module name="Library" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.javastart.library.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.pl.javastart.library.app.Library" />
         <item itemvalue="Application.Library" />
       </list>
     </recent_temporary>
@@ -100,13 +114,21 @@
       <option name="project" value="LOCAL" />
       <updated>1699881514540</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="131123.3">
+      <created>1699882458528</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1699882458528</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fist commit Library" />
     <MESSAGE value="131123.1" />
     <MESSAGE value="131123.2" />
-    <option name="LAST_COMMIT_MESSAGE" value="131123.2" />
+    <MESSAGE value="131123.3" />
+    <option name="LAST_COMMIT_MESSAGE" value="131123.3" />
   </component>
 </project>
