@@ -70,6 +70,8 @@ public class Book {
         this.publisher = publisher;
     }
     public void printInfo() {String info = title + "; " + author + "; " + releaseDate + "; "
-            + pages + "; " + publisher + "; " + isbn;
+            + pages + "; " + publisher;
+        if(isbn!=null){info=info+ "; "+ isbn;
+        }
         System.out.println(info);}
 }
