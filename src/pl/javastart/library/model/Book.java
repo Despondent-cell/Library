@@ -1,10 +1,26 @@
 package pl.javastart.library.model;
 
+import java.util.Objects;
+
 public class Book extends Publication {
     // Pola
     private String author;
     private int pages;
     private String isbn;
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
+        Book book = (Book) o;
+        return pages == book.pages && Objects.equals(author, book.author) && Objects.equals(isbn, book.isbn);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(super.hashCode(), author, pages, isbn);
+    }
 
     // Konstruktory
     public Book(String title, String author, int year, int pages, String publisher,
@@ -40,9 +56,11 @@ public class Book extends Publication {
         this.author = author;
     }
 
-    public void printInfo() {
-        String info = getTitle() + "; " + author + "; " + getYear() + "; "
-                + pages + "; " + getPublisher() + "; " + isbn;
-        System.out.println(info);
-    }
+
+
+
+    @Override
+    public String toString() {
+        return super.toString() + "; " +author+"; "+pages+"; "+isbn;
+    };
 }
