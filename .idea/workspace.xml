@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d48b27ac-a8fe-4faf-a48b-eb205fb912e1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pl/javastart/library/model/Magazine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/javastart/library/model/Publication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/javastart/library/app/LibraryApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/javastart/library/app/LibraryApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/javastart/library/app/LibraryControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/javastart/library/app/LibraryControl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/javastart/library/io/DataReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/javastart/library/io/DataReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/javastart/library/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/javastart/library/model/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/javastart/library/model/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/javastart/library/model/Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/javastart/library/model/Publication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/javastart/library/model/Publication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699888908949</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="131123.8">
+      <created>1699894346077</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1699894346077</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -207,6 +209,7 @@
     <MESSAGE value="131123.5" />
     <MESSAGE value="131123.6" />
     <MESSAGE value="131123.7" />
-    <option name="LAST_COMMIT_MESSAGE" value="131123.7" />
+    <MESSAGE value="131123.8" />
+    <option name="LAST_COMMIT_MESSAGE" value="131123.8" />
   </component>
 </project>

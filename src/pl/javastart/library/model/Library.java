@@ -2,17 +2,18 @@ package pl.javastart.library.model;
 
 public class Library {
 
-    private static final int MAX_BOOKS = 1000;
-    private static final int MAX_MAGAZINES = 1000;
-    private Book[] books = new Book[MAX_BOOKS];
-    private Magazine[] magazines = new Magazine[MAX_MAGAZINES];
-    private int booksNumber;
-    private int magazinesNumber;
+
+    private static final int MAX_PUBLICATIONS = 2000;
+
+    private int publicationsNumber = 0;
+    private Publication [] publications = new Publication [MAX_PUBLICATIONS];
+
+
 
     public void addBook(Book book) {
-        if (booksNumber < MAX_BOOKS) {
-            books[booksNumber] = book;
-            booksNumber++;
+        if (publicationsNumber < MAX_PUBLICATIONS) {
+            publications[publicationsNumber] = book;
+            publicationsNumber++;
         } else {
             System.out.println("Maxymalna liczba książek została osiągnięta");
         }
@@ -20,18 +21,23 @@ public class Library {
     }
 
     public void printBooks() {
-        if (booksNumber == 0) {
-            System.out.println("Brak książek w bibliotece");
-        }
-        for (int i = 0; i < booksNumber; i++) {
-            books[i].printInfo();
+
+        for (int i = 0; i < publicationsNumber; i++) {
+            int countBook = 0;
+            if (publications[i] instanceof Book) {
+                publications[i].printInfo();
+                countBook++;
+            }
+            if (countBook == 0) {
+                System.out.println("Brak książek w bibliotece");
+            }
         }
     }
 
     public void addMagazine(Magazine magazine) {
-        if(magazinesNumber < MAX_MAGAZINES) {
-            magazines[magazinesNumber] = magazine;
-            magazinesNumber++;
+        if(publicationsNumber < MAX_PUBLICATIONS) {
+            publications[publicationsNumber] = magazine;
+            publicationsNumber++;
         } else {
             System.out.println("Maxymalna liczba magazynów została osiągnięta");
         }
@@ -39,11 +45,15 @@ public class Library {
     }
 
     public void printMagazines() {
-        if (magazinesNumber == 0) {
-            System.out.println("Brak magazynów w bibliotece");
-        }
-        for (int i = 0; i < magazinesNumber; i++) {
-            magazines[i].printInfo();
+        for (int i = 0; i < publicationsNumber; i++) {
+            int countMagazine = 0;
+            if (publications[i] instanceof Magazine) {
+                publications[i].printInfo();
+                countMagazine++;
+            }
+            if (countMagazine == 0) {
+                System.out.println("Brak magazynów w bibliotece");
+            }
         }
     }
 }
