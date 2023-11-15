@@ -7,6 +7,7 @@ public class Book extends Publication {
     private String author;
     private int pages;
     private String isbn;
+    public static String TYPE="Książka";
 
     @Override
     public boolean equals(Object o) {
@@ -56,7 +57,16 @@ public class Book extends Publication {
         this.author = author;
     }
 
-
+    @Override
+    public String toCsv() {
+        return (TYPE + ";") +
+                getTitle() + ";" +
+                getPublisher() + ";" +
+                getYear() + ";" +
+                author + ";" +
+                pages + ";" +
+                isbn + "";
+    }
 
 
     @Override
