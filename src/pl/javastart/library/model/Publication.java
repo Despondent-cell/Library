@@ -2,7 +2,7 @@ package pl.javastart.library.model;
 
 import java.util.Objects;
 
-public class Publication {
+public abstract class Publication {
     public Publication( String title, String publisher, int year) {
         this.year = year;
         this.title = title;
