@@ -13,6 +13,7 @@ import pl.javastart.library.model.Library;
 import pl.javastart.library.model.Magazine;
 import pl.javastart.library.model.Publication;
 
+import java.util.Arrays;
 import java.util.InputMismatchException;
 
 class LibraryControl {
@@ -54,11 +55,15 @@ class LibraryControl {
                 case PRINT_MAGAZINES:
                     printMagazines();
                     break;
+                case DELETE_BOOK:
+                    deleteBook();
+                case DELETE_MAGAZINE:
+                    deleteMagazine();
+                default:
+                    printer.printLine("Nie ma takiej opcji, wprowadź ponownie: ");
                 case EXIT:
                     exit();
                     break;
-                default:
-                    printer.printLine("Nie ma takiej opcji, wprowadź ponownie: ");
             }
         } while (option != Option.EXIT);
     }
@@ -114,8 +119,37 @@ class LibraryControl {
         }
     }
 
+    private void deleteMagazine() {
+        Magazine magazine = dataReader.readAndCreateMagazine();
+        try {
+            if (library.removePublication(magazine)) {
+                printer.printLine("Usunięto magazyn");
+            } else {
+                printer.printLine("Brak wskazanego magazyny");
+            }
+            ;
+        } catch (InputMismatchException e){
+            printer.printLine("Nie udało się odnaleźć magazynu - niepoprawne dane");
+        }
+    }
+
+    private void deleteBook() {
+        Book book = dataReader.readAndCreateBook();
+        try {
+            if (library.removePublication(book)) {
+                printer.printLine("Usunięto książkę");
+            } else {
+                printer.printLine("Brak wskazanej książki");
+            }
+            ;
+        } catch (InputMismatchException e){
+            printer.printLine("Nie udało się odnaleźć książki - niepoprawne dane");
+        }
+    }
+
     private void printMagazines() {
         Publication[] publications = library.getPublications();
+        //Arrays.sort(publications);
         printer.printMagazines(publications);
     }
 
@@ -136,7 +170,9 @@ class LibraryControl {
         ADD_BOOK(1, "Dodanie książki"),
         ADD_MAGAZINE(2,"Dodanie magazynu/gazety"),
         PRINT_BOOKS(3, "Wyświetlenie dostępnych książek"),
-        PRINT_MAGAZINES(4, "Wyświetlenie dostępnych magazynów/gazet");
+        PRINT_MAGAZINES(4, "Wyświetlenie dostępnych magazynów/gazet"),
+        DELETE_BOOK(5, "Usuń książkę"),
+        DELETE_MAGAZINE(6, "Usuń magazyn");
 
         private int value;
         private String description;
