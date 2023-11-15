@@ -2,6 +2,7 @@ package pl.javastart.library.app;
 
 import pl.javastart.library.exception.DataExportException;
 import pl.javastart.library.exception.DataImportException;
+import pl.javastart.library.exception.InvalidDataException;
 import pl.javastart.library.exception.NoSuchOptionException;
 import pl.javastart.library.io.ConsolePrinter;
 import pl.javastart.library.io.DataReader;
@@ -25,7 +26,7 @@ class LibraryControl {
             library = fileManager.importData();
             printer.printLine("Zaimportowano dane z pliku.");
         }
-        catch (DataImportException e){
+        catch (DataImportException | InvalidDataException e){
             printer.printLine(e.getMessage());
             printer.printLine("Zainicjowano nową bazę.");
             library = new Library();
