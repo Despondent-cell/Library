@@ -18,7 +18,7 @@ public class Library implements Serializable {
     }
 
     public Map<String, Publication>  getPublications() {
-        return (Map<String, Publication>) publications.keySet();
+        return publications;
 
     }
 

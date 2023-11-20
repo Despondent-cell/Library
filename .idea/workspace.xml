@@ -5,16 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d48b27ac-a8fe-4faf-a48b-eb205fb912e1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pl/javastart/library/exception/PublicationAlreadyExistException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/javastart/library/exception/UserAlreadyExistException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/javastart/library/model/LibraryUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/javastart/library/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library_Users.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/javastart/library/io/ConsolePrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/javastart/library/io/ConsolePrinter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/javastart/library/io/DataReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/javastart/library/io/DataReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/javastart/library/app/LibraryControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/javastart/library/app/LibraryControl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/javastart/library/io/file/CsvFileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/javastart/library/io/file/CsvFileManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/javastart/library/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/javastart/library/model/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/javastart/library/model/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/javastart/library/model/Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/javastart/library/model/LibraryUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/javastart/library/model/LibraryUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/javastart/library/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/javastart/library/model/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,10 +48,14 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/Artur/Desktop/JavaStart/ProjectFx/Library",
     "settings.editor.selected.configurable": "editor.preferences.tabs"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Artur\Desktop\JavaStart\ProjectFx\Library" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="pl.javastart.library.model.comparator" />
     </key>
@@ -263,7 +264,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700318488000</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="201123.1  HashMap">
+      <created>1700499626776</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1700499626776</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -296,6 +304,7 @@
     <MESSAGE value="151123.4 Export danych do pliku 2" />
     <MESSAGE value="151123.5 Usuwanie danych z tablicy" />
     <MESSAGE value="181123.1 Sortowanie danych z tablicy" />
-    <option name="LAST_COMMIT_MESSAGE" value="181123.1 Sortowanie danych z tablicy" />
+    <MESSAGE value="201123.1  HashMap" />
+    <option name="LAST_COMMIT_MESSAGE" value="201123.1  HashMap" />
   </component>
 </project>
