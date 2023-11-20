@@ -8,6 +8,7 @@ public class Book extends Publication {
     private int pages;
     private String isbn;
     public static String TYPE="Książka";
+    public int quantity;
 
     @Override
     public boolean equals(Object o) {

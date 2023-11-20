@@ -5,11 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d48b27ac-a8fe-4faf-a48b-eb205fb912e1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pl/javastart/library/model/comparator/AlphabeticalComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/javastart/library/model/comparator/DateComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pl/javastart/library/exception/PublicationAlreadyExistException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pl/javastart/library/exception/UserAlreadyExistException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pl/javastart/library/model/LibraryUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pl/javastart/library/model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/javastart/library/app/LibraryControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/javastart/library/app/LibraryControl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/javastart/library/model/Publication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/javastart/library/model/Publication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/javastart/library/io/ConsolePrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/javastart/library/io/ConsolePrinter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/javastart/library/io/DataReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/javastart/library/io/DataReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/javastart/library/io/file/CsvFileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/javastart/library/io/file/CsvFileManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/javastart/library/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/javastart/library/model/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/javastart/library/model/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/javastart/library/model/Library.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +32,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="Main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -251,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700057468755</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="181123.1 Sortowanie danych z tablicy">
+      <created>1700318488000</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1700318488000</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -283,6 +295,7 @@
     <MESSAGE value="151123.3 Export danych do pliku 2" />
     <MESSAGE value="151123.4 Export danych do pliku 2" />
     <MESSAGE value="151123.5 Usuwanie danych z tablicy" />
-    <option name="LAST_COMMIT_MESSAGE" value="151123.5 Usuwanie danych z tablicy" />
+    <MESSAGE value="181123.1 Sortowanie danych z tablicy" />
+    <option name="LAST_COMMIT_MESSAGE" value="181123.1 Sortowanie danych z tablicy" />
   </component>
 </project>

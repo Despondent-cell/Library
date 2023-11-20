@@ -9,6 +9,8 @@ import pl.javastart.library.model.Magazine;
 import pl.javastart.library.model.Publication;
 
 import java.io.*;
+import java.util.Collection;
+import java.util.Map;
 import java.util.Scanner;
 
 class CsvFileManager implements FileManager {
@@ -62,7 +64,7 @@ class CsvFileManager implements FileManager {
 
     @Override
     public void exportData(Library library) {
-        Publication[] publications = library.getPublications();
+        Collection<Publication> publications = library.getPublications().values();
         try (FileWriter fileWriter = new FileWriter(FILE_NAME);
              BufferedWriter bufferedWriter = new BufferedWriter(fileWriter)) {
             for (Publication publication : publications) {
