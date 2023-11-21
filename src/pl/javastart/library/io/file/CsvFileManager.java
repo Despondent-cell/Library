@@ -12,8 +12,9 @@ import java.util.Map;
 import java.util.Scanner;
 
 class CsvFileManager implements FileManager {
-    private static final String FILE_NAME="Library.csv";
-    private static final String USERS_FILE_NAME="Library_Users.csv";
+    private static final String FILE_NAME = "Library.csv";
+    private static final String USERS_FILE_NAME = "Library_Users.csv";
+
     @Override
     public Library importData() {
         Library library = new Library();
@@ -24,7 +25,7 @@ class CsvFileManager implements FileManager {
 
     private void importUsers(Library library) {
         try (Scanner fileReader = new Scanner(new File(USERS_FILE_NAME))) {
-            while (fileReader.hasNextLine()){
+            while (fileReader.hasNextLine()) {
                 String line = fileReader.nextLine();
                 LibraryUser libraryUser = createUserFromString(line);
                 library.addUser(libraryUser);
@@ -39,23 +40,23 @@ class CsvFileManager implements FileManager {
         String type = split[0];
         try {
             return createUser(split);
-        } catch (UserAlreadyExistException e){
+        } catch (UserAlreadyExistException e) {
 
         }
         return null;
     }
 
     private LibraryUser createUser(String[] data) {
-        String first_name = data[1];
-        String last_name = data[2];
-        String pesel = data[3];
+        String first_name = data[0];
+        String last_name = data[1];
+        String pesel = data[2];
 
         return new LibraryUser(first_name, last_name, pesel);
     }
 
     private void importPublications(Library library) {
         try (Scanner fileReader = new Scanner(new File(FILE_NAME))) {
-            while (fileReader.hasNextLine()){
+            while (fileReader.hasNextLine()) {
                 String line = fileReader.nextLine();
                 Publication publication = createObjectFromString(line);
                 library.addPublication(publication);
@@ -72,10 +73,10 @@ class CsvFileManager implements FileManager {
         String type = split[0];
         if (Book.TYPE.equals(type)) {
             return createBook(split);
-        } else if (Magazine.TYPE.equals(type)){
+        } else if (Magazine.TYPE.equals(type)) {
             return createMagazine(split);
         }
-       throw new InvalidDataException("Nieznany typ publikacji" + type);
+        throw new InvalidDataException("Nieznany typ publikacji" + type);
 
     }
 
@@ -103,34 +104,31 @@ class CsvFileManager implements FileManager {
     public void exportData(Library library) {
         exportPublication(library);
         exportUsers(library);
-        
+
     }
 
     private void exportUsers(Library library) {
         Collection<LibraryUser> users = library.getUsers().values();
-        try (FileWriter fileWriter = new FileWriter(USERS_FILE_NAME);
-             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter)) {
-            for (LibraryUser user : users) {
-                bufferedWriter.write(user.toCsv());
-                bufferedWriter.newLine();
-            }
-        } catch (IOException e) {
-            throw new DataExportException("Błąd zapisu danych do pliku " + USERS_FILE_NAME);
-        }
+        exportToCsv(users,USERS_FILE_NAME);
     }
 
 
     private void exportPublication(Library library) {
         Collection<Publication> publications = library.getPublications().values();
-        try (FileWriter fileWriter = new FileWriter(FILE_NAME);
+        exportToCsv(publications,USERS_FILE_NAME);
+    }
+
+    private <T extends CsvConvertible> void exportToCsv(Collection <T> collection, String fileName) {
+
+        try (FileWriter fileWriter = new FileWriter(fileName);
              BufferedWriter bufferedWriter = new BufferedWriter(fileWriter)) {
-            for (Publication publication : publications) {
-                bufferedWriter.write(publication.toCsv());
+            for (T element : collection) {
+
+                bufferedWriter.write(element.toCsv());
                 bufferedWriter.newLine();
             }
         } catch (IOException e) {
-            throw new DataExportException("Błąd zapisu danych do pliku " + FILE_NAME);
+            throw new DataExportException("Błąd zapisu danych do pliku " + fileName);
         }
     }
-
 }

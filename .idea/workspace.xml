@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d48b27ac-a8fe-4faf-a48b-eb205fb912e1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Library_Users.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pl/javastart/library/model/CsvConvertible.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/javastart/library/app/LibraryControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/javastart/library/app/LibraryControl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/javastart/library/io/file/CsvFileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/javastart/library/io/file/CsvFileManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/javastart/library/model/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/javastart/library/model/Library.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/javastart/library/model/LibraryUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/javastart/library/model/LibraryUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/javastart/library/model/Publication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/javastart/library/model/Publication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/javastart/library/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/javastart/library/model/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -271,7 +269,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700499626776</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="201123.2  HashMap">
+      <created>1700508618963</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1700508618963</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -305,6 +310,7 @@
     <MESSAGE value="151123.5 Usuwanie danych z tablicy" />
     <MESSAGE value="181123.1 Sortowanie danych z tablicy" />
     <MESSAGE value="201123.1  HashMap" />
-    <option name="LAST_COMMIT_MESSAGE" value="201123.1  HashMap" />
+    <MESSAGE value="201123.2  HashMap" />
+    <option name="LAST_COMMIT_MESSAGE" value="201123.2  HashMap" />
   </component>
 </project>
