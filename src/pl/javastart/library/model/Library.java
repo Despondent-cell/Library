@@ -3,10 +3,9 @@ package pl.javastart.library.model;
 import pl.javastart.library.exception.PublicationAlreadyExistException;
 import pl.javastart.library.exception.UserAlreadyExistException;
 
+import java.awt.image.AreaAveragingScaleFilter;
 import java.io.Serializable;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class Library implements Serializable {
 
@@ -19,9 +18,19 @@ public class Library implements Serializable {
 
     public Map<String, Publication>  getPublications() {
         return publications;
+    }
+    public Collection<LibraryUser> getSortedUsers(Comparator<LibraryUser> comparator) {
+        ArrayList<LibraryUser> list = new ArrayList<>(users.values());
+        list.sort(comparator);
+        return list;
 
     }
 
+    public Collection <Publication> getSortedPublications (Comparator<Publication> comparator) {
+       List<Publication> list = new ArrayList<>(publications.values());
+        list.sort(comparator);
+        return list;
+    }
     public void addPublication(Publication publication) {
     if (publications.containsKey(publication.getTitle())){
         throw new PublicationAlreadyExistException("Podana pozycja już istnieje w bazie: " + publication.getTitle());
