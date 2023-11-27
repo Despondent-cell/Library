@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d48b27ac-a8fe-4faf-a48b-eb205fb912e1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/javastart/library/app/LibraryControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/javastart/library/app/LibraryControl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Main" />
+        <entry key="$PROJECT_DIR$" value="MovingToHashMap" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -286,7 +287,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700854367815</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="241123.1 Comparators, getting sorted collections">
+      <created>1701011291320</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1701011291320</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -322,7 +330,7 @@
     <MESSAGE value="201123.1  HashMap" />
     <MESSAGE value="201123.2  HashMap" />
     <MESSAGE value="211123.1 Generic Type &lt;T&gt; in Data manager" />
-    <MESSAGE value="241123.1 Comparators, getting sorted collections" />
-    <option name="LAST_COMMIT_MESSAGE" value="241123.1 Comparators, getting sorted collections" />
+    <MESSAGE value="261123.1 Replace comparator with Lambdas" />
+    <option name="LAST_COMMIT_MESSAGE" value="261123.1 Replace comparator with Lambdas" />
   </component>
 </project>
