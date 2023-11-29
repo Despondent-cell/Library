@@ -8,11 +8,9 @@ import pl.javastart.library.model.*;
 
 import java.io.*;
 import java.util.Collection;
-import java.util.Map;
-import java.util.Scanner;
 
 class CsvFileManager implements FileManager {
-    private static final String FILE_NAME = "Library.csv";
+    private static final String PUBLICATIONS_FILE_NAME = "Library.csv";
     private static final String USERS_FILE_NAME = "Library_Users.csv";
 
     @Override
@@ -24,15 +22,16 @@ class CsvFileManager implements FileManager {
     }
 
     private void importUsers(Library library) {
-        try (Scanner fileReader = new Scanner(new File(USERS_FILE_NAME))) {
-            while (fileReader.hasNextLine()) {
-                String line = fileReader.nextLine();
-                LibraryUser libraryUser = createUserFromString(line);
-                library.addUser(libraryUser);
-            }
+        try (BufferedReader bufferedReader = new BufferedReader(new FileReader(USERS_FILE_NAME))) {
+            bufferedReader.lines()
+                    .map(this::createUserFromString)
+                    .forEach(library::addUser);
         } catch (FileNotFoundException e) {
             throw new DataImportException("Brak pliku " + USERS_FILE_NAME);
+        } catch (IOException e) {
+            throw new DataImportException("Błąd odczytu pliku " + USERS_FILE_NAME);
         }
+
     }
 
     private LibraryUser createUserFromString(String line) {
@@ -55,17 +54,15 @@ class CsvFileManager implements FileManager {
     }
 
     private void importPublications(Library library) {
-        try (Scanner fileReader = new Scanner(new File(FILE_NAME))) {
-            while (fileReader.hasNextLine()) {
-                String line = fileReader.nextLine();
-                Publication publication = createObjectFromString(line);
-                library.addPublication(publication);
-            }
+        try(BufferedReader bufferedReader = new BufferedReader(new FileReader(PUBLICATIONS_FILE_NAME))) {
+            bufferedReader.lines()
+                    .map(this::createObjectFromString)
+                    .forEach(library::addPublication);
         } catch (FileNotFoundException e) {
-            throw new DataImportException("Brak pliku " + FILE_NAME);
+            throw new DataImportException("Brak pliku " + PUBLICATIONS_FILE_NAME);
+        } catch (IOException e) {
+            throw new DataImportException("Błąd odczytu pliku " + PUBLICATIONS_FILE_NAME);
         }
-
-
     }
 
     private Publication createObjectFromString(String line) {

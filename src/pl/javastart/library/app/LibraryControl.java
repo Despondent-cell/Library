@@ -139,7 +139,7 @@ class LibraryControl {
             } else {
                 printer.printLine("Brak wskazanego magazyny");
             }
-            ;
+
         } catch (InputMismatchException e){
             printer.printLine("Nie udało się odnaleźć magazynu - niepoprawne dane");
         }
@@ -153,7 +153,7 @@ class LibraryControl {
             } else {
                 printer.printLine("Brak wskazanej książki");
             }
-            ;
+
         } catch (InputMismatchException e){
             printer.printLine("Nie udało się odnaleźć książki - niepoprawne dane");
         }
