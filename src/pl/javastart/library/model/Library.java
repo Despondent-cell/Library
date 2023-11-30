@@ -31,6 +31,10 @@ public class Library implements Serializable {
         list.sort(comparator);
         return list;
     }
+
+    public Optional<Publication> findPublicationByTitle(String title) {
+        return Optional.ofNullable(publications.get(title));
+    }
     public void addPublication(Publication publication) {
     if (publications.containsKey(publication.getTitle())){
         throw new PublicationAlreadyExistException("Podana pozycja już istnieje w bazie: " + publication.getTitle());

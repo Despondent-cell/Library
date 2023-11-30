@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d48b27ac-a8fe-4faf-a48b-eb205fb912e1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/javastart/library/model/Magazine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/javastart/library/model/Magazine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/javastart/library/model/Publication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/javastart/library/model/Publication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/javastart/library/app/LibraryControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/javastart/library/app/LibraryControl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/javastart/library/model/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/javastart/library/model/Library.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -309,7 +309,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701277543393</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="301123.1 Date refactor. Comparator removal">
+      <created>1701366830346</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1701366830346</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -348,6 +355,7 @@
     <MESSAGE value="261123.1 Replace comparator with Lambdas" />
     <MESSAGE value="271123.1 Replace comparator with Lambdas" />
     <MESSAGE value="291123.1 Replace comparator with Lambdas" />
-    <option name="LAST_COMMIT_MESSAGE" value="291123.1 Replace comparator with Lambdas" />
+    <MESSAGE value="301123.1 Date refactor. Comparator removal" />
+    <option name="LAST_COMMIT_MESSAGE" value="301123.1 Date refactor. Comparator removal" />
   </component>
 </project>
